@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government Senior Secondary School Parwanoo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
@@ -29,23 +30,29 @@
             padding: 10px 20px;
             margin: 0 10px;
             font-size: 18px;
+            transition: background-color 0.3s;
         }
         nav a:hover {
             background-color: #0056b3;
             border-radius: 5px;
         }
+        .hero {
+            background: url('images/school_hero.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
         .container {
             padding: 20px;
             text-align: center;
-        }
-        footer {
-            background-color: #004080;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         .home-info {
             max-width: 800px;
@@ -67,26 +74,101 @@
         .home-info p {
             margin: 10px 0;
         }
-        .blog-section {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Government Senior Secondary School Parwanoo</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="directory.html">Directory</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="work_with_us.html">Work With Us</a>
+        <a href="wallofphotos.html">Wall of Photos</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to Our School</h1>
+        <p>Empowering students with knowledge and values for a bright future.</p>
+    </div>
+    <div class="container">
+        <div class="home-info">
+            <h3>About Us</h3>
+            <img src="images/school_building.jpg" alt="School Building">
+            <p>Government Senior Secondary School Parwanoo is dedicated to providing quality education and fostering a love for learning. Our experienced staff and state-of-the-art facilities create an environment where students can thrive.</p>
+            
+            <h3>Our Programs</h3>
+            <img src="images/classroom.jpg" alt="Classroom">
+            <p>We offer a variety of academic programs including Science, Commerce, and Arts streams. Our curriculum is designed to prepare students for higher education and successful careers.</p>
+            
+            <h3>Extracurricular Activities</h3>
+            <img src="images/sports.jpg" alt="Sports">
+            <p>Our school provides numerous extracurricular activities such as sports, music, dance, and drama. These activities help in the holistic development of our students.</p>
+            
+            <h3>Community Engagement</h3>
+            <img src="images/community_service.jpg" alt="Community Service">
+            <p>We believe in giving back to the community. Our students participate in various community service projects, helping them develop a sense of responsibility and empathy.</p>
+            
+            <h3>Contact Us</h3>
+            <img src="images/contact_us.jpg" alt="Contact Us">
+            <p>If you have any questions or need more information, please feel free to <a href="contact.html">contact us</a>. We are here to help you.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Government Senior Secondary School. All Rights Reserved.</p>
+    </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Senior Secondary School Parwanoo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #004080;
+            color: white;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            text-align: center;
         }
-        .blog-section h3 {
-            color: #004080;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px;
         }
-        .blog-post {
-            margin-bottom: 20px;
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: background-color 0.3s;
         }
-        .blog-post h4 {
-            margin: 10px 0;
-        }
-        .blog-post p {
-            margin: 10px 0;
+        nav a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
         }
         .hero {
             background: url('images/school_hero.jpg') no-repeat center center/cover;
@@ -101,6 +183,39 @@
         .hero p {
             font-size: 24px;
             margin: 10px 0 0;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .home-info {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .home-info h3 {
+            color: #004080;
+        }
+        .home-info img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .home-info p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
