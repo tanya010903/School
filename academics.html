@@ -6,106 +6,216 @@
     <title>Academics - Government Senior Secondary School Parwanoo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
+            color: #333;
         }
+
         header {
-            background-color: #004080;
+            background: linear-gradient(135deg, #004080, #007bff);
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
+
         nav {
             display: flex;
             justify-content: center;
             background-color: #007bff;
-            padding: 10px;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 18px;
+            padding: 10px 15px;
+            margin: 0 8px;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
         }
+
         nav a:hover {
             background-color: #0056b3;
             border-radius: 5px;
         }
+
+        .hero {
+            background: url('images/classroom.jpg') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: grey;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
         .container {
-            padding: 20px;
+            max-width: 1100px;
+            margin: 30px auto;
             text-align: center;
         }
+
+        .academics-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #004080;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
         footer {
             background-color: #004080;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 15px;
+            margin-top: 20px;
         }
-        .academics-info {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .academics-info h3 {
-            color: #004080;
-        }
-        .academics-info img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 10px 0;
-        }
-        .academics-info p {
-            margin: 10px 0;
+
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                height: 250px;
+                font-size: 24px;
+            }
+
+            .academics-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Academics</h1>
+        Academics at GSSS Parwanoo
     </header>
+    
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="academics.html">Academics</a>
         <a href="admissions.html">Admissions</a>
         <a href="contact.html">Contact</a>
-        <a href="blog.html">Contact</a>
+        <a href="blog.html">Blog</a>
         <a href="directory.html">Directory</a>
         <a href="alumni.html">Alumni</a>
         <a href="work_with_us.html">Work With Us</a>
         <a href="wallofphotos.html">Wall of Photos</a>
-
     </nav>
+
+    <div class="hero">
+        Explore Our Academic Programs
+    </div>
+
     <div class="container">
-        <h2>Our Academic Programs</h2>
-        <div class="academics-info">
-            <h3>Science Stream</h3>
-            <img src="images/science.jpg" alt="Science Stream">
-            <p>Our science stream offers a comprehensive curriculum that includes Physics, Chemistry, Biology, and Mathematics. Our state-of-the-art laboratories provide hands-on experience to students.</p>
-            
-            <h3>Commerce Stream</h3>
-            <img src="images/commerce.jpg" alt="Commerce Stream">
-            <p>The commerce stream covers subjects like Accountancy, Business Studies, Economics, and Mathematics. We prepare students for careers in business, finance, and management.</p>
-            
-            <h3>Arts Stream</h3>
-            <img src="images/arts.jpg" alt="Arts Stream">
-            <p>The arts stream includes subjects such as History, Political Science, Sociology, and Geography. Our curriculum is designed to foster critical thinking and creativity.</p>
-            
-            <h3>Extracurricular Activities</h3>
-            <img src="images/extracurricular.jpg" alt="Extracurricular Activities">
-            <p>We offer a wide range of extracurricular activities including sports, music, dance, and drama. These activities help in the holistic development of our students.</p>
+        <h2>Academic Streams & Programs</h2>
+        <div class="academics-section">
+            <div class="card">
+                <img src="images/science.jpg" alt="Science Stream">
+                <div class="card-content">
+                    <h3>Science Stream</h3>
+                    <p>Comprehensive subjects including Physics, Chemistry, Biology & Mathematics.</p>
+                    <a href="science-details.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/commerce.jpg" alt="Commerce Stream">
+                <div class="card-content">
+                    <h3>Commerce Stream</h3>
+                    <p>Covering Accountancy, Business Studies, Economics, and Mathematics.</p>
+                    <a href="commerce-details.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/arts.jpg" alt="Arts Stream">
+                <div class="card-content">
+                    <h3>Arts Stream</h3>
+                    <p>Includes History, Political Science, Sociology, and Geography.</p>
+                    <a href="arts-details.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/extracurricular.jpg" alt="Extracurricular Activities">
+                <div class="card-content">
+                    <h3>Extracurricular Activities</h3>
+                    <p>Wide range of activities including sports, music, dance, and drama.</p>
+                    <a href="extracurricular.html" class="btn">Learn More</a>
+                </div>
+            </div>
         </div>
     </div>
+
     <footer>
         <p>&copy; 2025 Government Senior Secondary School. All Rights Reserved.</p>
     </footer>

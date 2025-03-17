@@ -16,54 +16,112 @@
             color: white;
             padding: 20px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #007bff;
             padding: 10px;
+            flex-wrap: wrap;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 18px;
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+            border-radius: 5px;
         }
         nav a:hover {
             background-color: #0056b3;
-            border-radius: 5px;
         }
         .container {
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
             text-align: center;
+            color: #004080;
+            margin-bottom: 20px;
+        }
+        .admissions-info {
+            text-align: left;
+        }
+        .admissions-info h3 {
+            color: #004080;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .admissions-info p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .important-dates {
+            background-color: #eef5ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .important-dates ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .important-dates li {
+            padding: 8px 0;
+            font-size: 16px;
+        }
+        .apply-now {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .apply-now a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .apply-now a:hover {
+            background-color: #0056b3;
+        }
+        .faq {
+            margin-top: 30px;
+        }
+        .faq h3 {
+            color: #004080;
+            margin-bottom: 10px;
+        }
+        .faq p {
+            font-size: 16px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
         }
         footer {
             background-color: #004080;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .admissions-info {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .admissions-info h3 {
-            color: #004080;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Admissions</h1>
+        Admissions - Government Senior Secondary School Parwanoo
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -71,25 +129,72 @@
         <a href="academics.html">Academics</a>
         <a href="admissions.html">Admissions</a>
         <a href="contact.html">Contact</a>
-        <a href="blog.html">Contact</a>
+        <a href="blog.html">Blog</a>
         <a href="directory.html">Directory</a>
         <a href="alumni.html">Alumni</a>
         <a href="work_with_us.html">Work With Us</a>
         <a href="wallofphotos.html">Wall of Photos</a>
     </nav>
+
     <div class="container">
         <h2>Admission Process</h2>
         <div class="admissions-info">
             <h3>Eligibility Criteria</h3>
-            <p>Details about the eligibility criteria for admission to various classes.</p>
+            <p>Students seeking admission must meet the following criteria:</p>
+            <ul>
+                <li>Pre-Primary & Primary: Age 3-10 years</li>
+                <li>Middle School: Completion of previous grade with passing marks</li>
+                <li>Senior Secondary: Minimum 60% in Class 10 (for Science stream), 50% (for Commerce/Arts)</li>
+                <li>Transfer cases: Must provide previous school records</li>
+            </ul>
+
             <h3>Application Procedure</h3>
-            <p>Step-by-step guide on how to apply for admission.</p>
+            <p>The application process includes the following steps:</p>
+            <ol>
+                <li>Fill the online admission form</li>
+                <li>Submit required documents (Birth certificate, Previous academic records, ID proof, Address proof)</li>
+                <li>Appear for an entrance assessment (if applicable)</li>
+                <li>Final selection based on merit and seat availability</li>
+            </ol>
+
             <h3>Important Dates</h3>
-            <p>Information about important dates related to the admission process.</p>
+            <div class="important-dates">
+                <ul>
+                    <li><strong>Application Start:</strong> March 1, 2025</li>
+                    <li><strong>Last Date to Apply:</strong> May 15, 2025</li>
+                    <li><strong>Entrance Test:</strong> May 25, 2025</li>
+                    <li><strong>Merit List Announcement:</strong> June 1, 2025</li>
+                    <li><strong>Final Admissions & Fee Payment:</strong> June 10-20, 2025</li>
+                </ul>
+            </div>
+
+            <div class="apply-now">
+                <a href="admission-form.html">Apply Now</a>
+            </div>
+
+            <h3>Frequently Asked Questions (FAQs)</h3>
+            <div class="faq">
+                <h3>1. What documents are required for admission?</h3>
+                <p>Students must provide a birth certificate, previous school report card, passport-size photos, and ID proof.</p>
+
+                <h3>2. Is there an entrance test?</h3>
+                <p>Yes, for middle and senior secondary classes, an entrance test is conducted to assess the student’s knowledge.</p>
+
+                <h3>3. Can I apply offline?</h3>
+                <p>Yes, you can collect the admission form from the school office and submit it along with the required documents.</p>
+
+                <h3>4. Is there a transport facility available?</h3>
+                <p>Yes, school transport is available for students. You can contact the administration for more details.</p>
+            </div>
+
             <h3>Contact Information</h3>
-            <p>For any queries related to admissions, please contact us at <a href="mailto:admissions@gsssparwanoo.edu">admissions@gsssparwanoo.edu</a>.</p>
+            <p>For any queries related to admissions, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:admissions@gsssparwanoo.edu">admissions@gsssparwanoo.edu</a></p>
+            <p><strong>Phone:</strong> +91-98765-43210</p>
+            <p><strong>Office Hours:</strong> Monday - Friday (9:00 AM - 3:00 PM)</p>
         </div>
     </div>
+
     <footer>
         <p>&copy; 2025 Government Senior Secondary School. All Rights Reserved.</p>
     </footer>

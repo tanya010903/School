@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Government Senior Secondary School Parwanoo</title>
+    <title>School Blog - Government Senior Secondary School Parwanoo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,83 +16,88 @@
             color: white;
             padding: 20px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #007bff;
             padding: 10px;
+            flex-wrap: wrap;
         }
         nav a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 10px;
+            margin: 5px;
             font-size: 18px;
+            transition: 0.3s;
         }
         nav a:hover {
             background-color: #0056b3;
             border-radius: 5px;
         }
         .container {
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+        }
+        .blog-section h2 {
+            color: #004080;
+            margin-bottom: 20px;
+        }
+        .blog-post {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .blog-post h3 {
+            color: #004080;
+            margin: 0;
+        }
+        .blog-post p {
+            font-size: 16px;
+            color: #333;
+        }
+        .more-content {
+            display: none;
+            color: #555;
+            font-size: 14px;
+        }
+        .read-more-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .read-more-btn:hover {
+            background-color: #0056b3;
         }
         footer {
             background-color: #004080;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .home-info {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .home-info h3 {
-            color: #004080;
-        }
-        .home-info img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 10px 0;
-        }
-        .home-info p {
-            margin: 10px 0;
-        }
-        .blog-section {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .blog-section h3 {
-            color: #004080;
-        }
-        .blog-post {
-            margin-bottom: 20px;
-        }
-        .blog-post h4 {
-            margin: 10px 0;
-        }
-        .blog-post p {
-            margin: 10px 0;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Government Senior Secondary School Parwanoo</h1>
+        Government Senior Secondary School Parwanoo - Blog
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -105,27 +110,48 @@
         <a href="alumni.html">Alumni</a>
         <a href="work_with_us.html">Work With Us</a>
         <a href="wallofphotos.html">Wall of Photos</a>
-
     </nav>
-        
+    <div class="container">
         <div class="blog-section">
-            <h3>School Blog</h3>
+            <h2>Latest School Updates</h2>
+
             <div class="blog-post">
-                <h4>Annual Sports Day</h4>
-                <p>Our Annual Sports Day was a huge success with students participating in various sports events. Congratulations to all the winners!</p>
+                <h3>Annual Sports Day</h3>
+                <p>Our Annual Sports Day was a huge success with students participating in various sports events...</p>
+                <p class="more-content">The event included races, long jumps, and fun activities for students and teachers. Medals were awarded to the winners.</p>
+                <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
             </div>
+
             <div class="blog-post">
-                <h4>Science Exhibition</h4>
-                <p>The Science Exhibition showcased innovative projects by our students. It was a great platform for students to display their creativity and scientific knowledge.</p>
+                <h3>Science Exhibition</h3>
+                <p>Students showcased innovative projects, exploring technology, robotics, and environmental sustainability...</p>
+                <p class="more-content">The exhibition was a great learning experience for students, fostering creativity and practical knowledge in science.</p>
+                <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
             </div>
+
             <div class="blog-post">
-                <h4>Community Service Initiative</h4>
-                <p>Our students participated in a community service initiative to clean up the local park. It was a wonderful experience for everyone involved.</p>
+                <h3>Community Service Initiative</h3>
+                <p>Our students participated in a local park cleanup, promoting awareness about the importance of cleanliness...</p>
+                <p class="more-content">The initiative helped students develop a sense of social responsibility and teamwork while improving the environment.</p>
+                <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
             </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2025 Government Senior Secondary School. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function toggleContent(btn) {
+            let moreContent = btn.previousElementSibling;
+            if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                moreContent.style.display = "block";
+                btn.textContent = "Read Less";
+            } else {
+                moreContent.style.display = "none";
+                btn.textContent = "Read More";
+            }
+        }
+    </script>
 </body>
 </html>

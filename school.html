@@ -10,18 +10,24 @@
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
+            color: #333;
         }
         header {
             background-color: #004080;
             color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #007bff;
             padding: 10px;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: white;
@@ -29,20 +35,62 @@
             padding: 10px 20px;
             margin: 0 10px;
             font-size: 18px;
+            transition: 0.3s;
         }
         nav a:hover {
             background-color: #0056b3;
             border-radius: 5px;
+            transform: scale(1.1);
+        }
+        .hero {
+            background: url('images/school_banner.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 24px;
+            font-weight: bold;
         }
         .container {
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+        .info-section {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .info-section h3 {
+            color: #004080;
+        }
+        .info-section p {
+            line-height: 1.6;
+        }
+        .cta-buttons {
+            margin: 30px 0;
+        }
+        .cta-buttons a {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .cta-buttons a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
         footer {
             background-color: #004080;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -65,9 +113,20 @@
         <a href="work_with_us.html">Work With Us</a>
         <a href="wallofphotos.html">Wall of Photos</a>
     </nav>
+    <div class="hero">
+        <h2>Empowering Students with Knowledge and Values</h2>
+    </div>
     <div class="container">
-        <h2>Welcome to Government Senior Secondary School</h2>
-        <p>Empowering students with knowledge and values for a bright future.</p>
+        <div class="info-section">
+            <h3>Welcome to Our School</h3>
+            <p>Government Senior Secondary School Parwanoo is committed to academic excellence, character building, and holistic development of students. Our institution provides state-of-the-art infrastructure, experienced faculty, and a nurturing environment.</p>
+            <h3>Why Choose Us?</h3>
+            <p>We offer a well-rounded education, blending academics with extracurricular activities. Our students excel in academics, sports, and cultural activities, making them well-prepared for future challenges.</p>
+        </div>
+        <div class="cta-buttons">
+            <a href="admissions.html">Apply Now</a>
+            <a href="contact.html">Get in Touch</a>
+        </div>
     </div>
     <footer>
         <p>&copy; 2025 Government Senior Secondary School. All Rights Reserved.</p>

@@ -18,85 +18,100 @@
             padding: 20px;
             text-align: center;
             position: relative;
+            font-size: 24px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #007bff;
-            padding: 10px;
-            position: -webkit-sticky; /* For Safari */
+            padding: 12px;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 12px 20px;
             margin: 0 10px;
             font-size: 18px;
+            transition: 0.3s ease;
         }
         nav a:hover {
             background-color: #0056b3;
             border-radius: 5px;
+            transform: scale(1.1);
+        }
+        .hero {
+            background: url('images/school_banner.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
         .container {
-            padding: 20px;
+            padding: 40px;
             text-align: center;
         }
         .home-info {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items to the start (left) */
         }
         .home-info h3 {
             color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
         }
         .home-info img, .home-info video {
             max-width: 100%;
             border-radius: 8px;
-            margin: 10px 0;
-        }
-        .home-info p {
-            margin: 10px 0;
+            margin: 15px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .cta-buttons {
-            margin: 20px 0;
-            text-align: center;
+            margin: 30px 0;
         }
         .cta-buttons a {
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            padding: 15px 25px;
+            padding: 15px 30px;
             margin: 10px;
             border-radius: 5px;
             display: inline-block;
+            font-size: 18px;
+            transition: 0.3s;
         }
         .cta-buttons a:hover {
             background-color: #0056b3;
+            transform: scale(1.1);
         }
         footer {
             background-color: #004080;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            padding: 15px;
+            position: relative;
             width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Government Senior Secondary School Parwanoo</h1>
+        Government Senior Secondary School Parwanoo
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -110,8 +125,10 @@
         <a href="work_with_us.html">Work With Us</a>
         <a href="wallofphotos.html">Wall of Photos</a>
     </nav>
+    <div class="hero">
+        Welcome to Our School - A Place for Excellence in Education
+    </div>
     <div class="container">
-        <h1>Welcome to Our School</h1>
         <div class="home-info">
             <h3>About Us</h3>
             <img src="images/school_building.jpg" alt="School Building">
@@ -126,16 +143,15 @@
                 <source src="videos/school_activities.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p>Our school provides numerous extracurricular activities such
- 
-as sports, music, drama, and more. These activities help students develop their talents and interests outside of the classroom.</p>
+            <p>Our school provides numerous extracurricular activities such as sports, music, drama, and more. These activities help students develop their talents and interests outside of the classroom.</p>
         </div>
         <div class="cta-buttons">
             <a href="admissions.html">Apply Now</a>
             <a href="contact.html">Get in Touch</a>
         </div>
-        
     </div>
     <footer>
-        &copy; 2021 Government Senior Secondary School Parwanoo
+        &copy; 2025 Government Senior Secondary School Parwanoo | All Rights Reserved
     </footer>
+</body>
+</html>

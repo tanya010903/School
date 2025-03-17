@@ -6,72 +6,94 @@
     <title>About Us - Government Senior Secondary School Parwanoo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f4f4f9;
         }
         header {
-            background-color: #004080;
+            background: linear-gradient(90deg, #002855, #007bff);
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #007bff;
-            padding: 10px;
+            background-color: #003d80;
+            padding: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: 0.3s;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
+            padding: 14px 22px;
+            margin: 0 8px;
             font-size: 18px;
-        }
-        nav a:hover {
-            background-color: #0056b3;
+            transition: 0.3s;
             border-radius: 5px;
         }
-        .container {
-            padding: 20px;
-            text-align: center;
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
         }
-        footer {
-            background-color: #004080;
-            color: white;
+        .container {
+            padding: 50px 20px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         .about-info {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: auto;
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             text-align: left;
+            transition: transform 0.3s ease-in-out;
+        }
+        .about-info:hover {
+            transform: translateY(-5px);
         }
         .about-info h3 {
-            color: #004080;
+            color: #002855;
+            border-left: 6px solid #007bff;
+            padding-left: 12px;
+            font-size: 22px;
+            margin-bottom: 10px;
         }
         .about-info img {
             max-width: 100%;
-            border-radius: 8px;
-            margin: 10px 0;
+            border-radius: 10px;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .about-info img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .about-info p {
-            margin: 10px 0;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #333;
+        }
+        footer {
+            background: linear-gradient(90deg, #002855, #007bff);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 16px;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>About Us</h1>
+        About Us
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -79,41 +101,55 @@
         <a href="academics.html">Academics</a>
         <a href="admissions.html">Admissions</a>
         <a href="contact.html">Contact</a>
-        <a href="blog.html">Contact</a>
+        <a href="blog.html">Blog</a>
         <a href="directory.html">Directory</a>
         <a href="alumni.html">Alumni</a>
         <a href="work_with_us.html">Work With Us</a>
         <a href="wallofphotos.html">Wall of Photos</a>
-        
-        
-
     </nav>
     <div class="container">
         <h2>Welcome to Government Senior Secondary School Parwanoo</h2>
         <div class="about-info">
+            <h3>Principal's Message</h3>
+            <img src="images/principal.jpg" alt="Principal's Message">
+            <p>“Education is the most powerful weapon which you can use to change the world.” At Government Senior Secondary School Parwanoo, we believe in holistic education that nurtures young minds academically, socially, and emotionally. Our mission is to provide an environment where students can learn, grow, and succeed. – **Principal, GSSS Parwanoo**</p>
+            
             <h3>Our Mission</h3>
             <img src="images/mission.jpg" alt="Our Mission">
-            <p>Our mission is to provide quality education that empowers students to achieve their full potential and become responsible citizens. We aim to foster a love for learning and encourage students to pursue their passions.</p>
+            <p>Empowering students with quality education and lifelong learning opportunities.</p>
             
             <h3>Our Vision</h3>
             <img src="images/vision.jpg" alt="Our Vision">
-            <p>Our vision is to be a leading educational institution that nurtures creativity, innovation, and excellence. We strive to create a supportive and inclusive environment where every student can thrive.</p>
+            <p>To create a progressive environment that nurtures creativity, excellence, and innovation.</p>
             
             <h3>Our History</h3>
             <img src="images/history.jpg" alt="Our History">
-            <p>Established in 1985, Government Senior Secondary School Parwanoo has a rich history of academic excellence and community involvement. Over the years, we have grown and evolved to meet the changing needs of our students and society.</p>
+            <p>Established in 1985, we have been a pillar of education, shaping the future of young minds.</p>
             
-            <h3>Our Facilities</h3>
-            <img src="images/facilities.jpg" alt="Our Facilities">
-            <p>We offer state-of-the-art facilities including modern classrooms, well-equipped laboratories, a comprehensive library, and extensive sports facilities. Our campus provides a safe and conducive environment for learning and personal growth.</p>
-            
-            <h3>Our Staff</h3>
-            <img src="images/staff.jpg" alt="Our Staff">
-            <p>Our dedicated team of educators and staff are committed to providing the best possible education and support to our students. They bring a wealth of experience and expertise to the classroom and are passionate about helping students succeed.</p>
-            
+            <h3>Student Life at GSSS Parwanoo</h3>
+            <img src="images/student_life.jpg" alt="Student Life">
+            <p>Our school provides a dynamic and engaging atmosphere where students enjoy academics, cultural events, and sports. We encourage students to explore their passions through clubs, workshops, and leadership programs.</p>
+
+            <h3>Extracurricular Activities</h3>
+            <img src="images/extracurricular.jpg" alt="Extracurricular Activities">
+            <p>We offer a variety of extracurricular activities such as sports, music, drama, debate, and robotics to ensure all-round development.</p>
+
+            <h3>Achievements & Awards</h3>
+            <img src="images/achievements.jpg" alt="Achievements">
+            <p>Over the years, our students have excelled in academics, sports, and competitions at district, state, and national levels.</p>
+
+            <h3>Alumni Success Stories</h3>
+            <img src="images/alumni.jpg" alt="Alumni">
+            <p>Our alumni have gone on to achieve remarkable success in diverse fields such as engineering, medicine, business, arts, and government services.</p>
+
             <h3>Community Involvement</h3>
             <img src="images/community.jpg" alt="Community Involvement">
-            <p>We believe in the importance of community involvement and encourage our students to participate in various community service projects. These activities help students develop a sense of responsibility and empathy towards others.</p>
+            <p>Encouraging students to give back through impactful community service initiatives.</p>
+
+            <h3>What Our Students Say</h3>
+            <img src="images/testimonials.jpg" alt="Testimonials">
+            <p>🌟 *"This school has been a second home to me. The teachers are inspiring, and the learning experience is incredible!"* – **Rahul Sharma, Class of 2023**</p>
+            <p>🌟 *"A great place to grow, learn, and make lifelong friendships."* – **Priya Mehta, Class of 2022**</p>
         </div>
     </div>
     <footer>
